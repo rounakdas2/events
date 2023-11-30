@@ -3,12 +3,12 @@ import './index.css'
 
 const registrationStatus = {
   yetToRegister: 'YET_TO_REGISTER',
-  registered: 'REGISTERED'
+  registered: 'REGISTERED',
   registrationsClosed: 'REGISTRATIONS_CLOSED',
 }
 
 const ActiveEventRegistrationDetails = props => {
-  const {ActiveEventRegistrationStatus} = props 
+  const {ActiveEventRegistrationStatus} = props
 
   const renderNoActiveEventView = () => (
     <p className="no-active-event-description">
@@ -20,8 +20,8 @@ const ActiveEventRegistrationDetails = props => {
     <div className="view-container">
       <img
         src="https://assets.ccbp.in/frontend/react-js/events-registrations-closed-img.png"
-        alt="registration closed"
-        className="registrations-closed-heading"
+        alt="registrations closed"
+        className="registrations-closed-image"
       />
       <h1 className="'registrations-closed-heading">
         Registration Are Closed Now!
@@ -40,7 +40,7 @@ const ActiveEventRegistrationDetails = props => {
         className="registered-img"
       />
       <h1 className="registered-heading">
-        You have already registered for the event 
+        You have already registered for the event
       </h1>
     </div>
   )
@@ -72,7 +72,7 @@ const ActiveEventRegistrationDetails = props => {
       case registrationStatus.registrationsClosed:
         return renderRegistrationsClosedView()
       default:
-          return renderNoActiveEventView()
+        return renderNoActiveEventView()
     }
   }
 
@@ -84,95 +84,3 @@ const ActiveEventRegistrationDetails = props => {
 }
 
 export default ActiveEventRegistrationDetails
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
